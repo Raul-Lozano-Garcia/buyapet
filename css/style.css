@@ -228,6 +228,7 @@ main{
   bottom: 0;
   margin: auto;
   padding:1em 1em 1em 1em;
+  box-shadow: 0px 0px 15px black;
 }
 
 .elementos h1{
@@ -859,7 +860,13 @@ section#ficha{
   gap: 1em;
   border-top: 1px solid rgba(0, 0, 0, .5);
   border-bottom: 1px solid rgba(0, 0, 0, .5);
-  padding: .5em 0;
+  padding: .5em;
+  transition: all 300ms ease-in-out;
+}
+
+#ficha .lista2:hover{
+  background-color: var(--principal);
+  color: white;
 }
 
 #ficha .lista2 li{
@@ -926,4 +933,38 @@ section#ficha{
   #ficha .lista2{
     flex-wrap: wrap;
   }
+
+  #ficha .lista2:hover{
+    background-color: transparent;
+    color: black;
+  }
+}
+
+/* OTROS PRODUCTOS */
+#otrosProductos{
+  background-color: white;
+}
+
+#otrosProductos::before{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 90%;
+  margin-top:10px;
+  background-color: var(--oscuro);
+  margin: 0 auto;
+}
+
+#otrosProductos>h2{
+  text-align: center;
+  font-size: 3em;
+  margin: 1em 0;
+}
+
+#otrosProductos>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
