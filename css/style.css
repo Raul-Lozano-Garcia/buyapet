@@ -713,7 +713,6 @@ article:nth-child(6) .imagen_blog{
 .contenido h2{
   text-align: center;
   font-size: 2em;
-  /* margin-bottom: .5em; */
   transition: all 300ms ease-in-out;
 }
 
@@ -763,6 +762,10 @@ article:nth-child(6) .imagen_blog{
     margin: 1em auto;
   }
 
+  .contenido h2{
+    font-size: 1.5em;
+  }
+
   .producto{
     height: 450px;
   }
@@ -776,7 +779,7 @@ article:nth-child(6) .imagen_blog{
   }
   
   .producto:hover h2{
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   .producto:hover span{
